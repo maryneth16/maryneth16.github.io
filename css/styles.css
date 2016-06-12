@@ -143,6 +143,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
 /* sugerencias de libros cierre */
 
 
+
 /* bloque anuncios inicio */
 
 #anuncios {
@@ -157,6 +158,12 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
 #anuncios > img{
     margin-left: 50px;
     display: flex;
+    margin-bottom: 15px;
+}
+
+#anuncios p{
+    text-align: center;
+    padding-left: 90px;
 }
 
 /* bloque anuncios cierre */
@@ -175,6 +182,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
     border-radius: 20px;
     margin-right: 300px;
     transition: 0.5px;
+    margin-bottom: 10px;
 }
 
  .Leer-libro  div{
@@ -204,13 +212,14 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
     display: inline-block;
     padding: 3px;
     box-shadow: 0 2px 3px darkgray;
-     border-radius: 20px;
+    border-radius: 20px;
     transition: 0.5px;
+    margin-bottom: 10px;
 }
 
  .Descargar-Libro  div{
-       padding: 2px 20px !important;
-       border: 1px solid black;
+    padding: 2px 20px !important;
+    border: 1px solid black;
      border-radius: 20px;
      
     
@@ -223,6 +232,8 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
 
 /* boton 2 final */
 
+
+/* pie de pagina inicio */
 #pie 
   {
       clear: both;
@@ -238,7 +249,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
  }
 
 
-
+/* pie de pagina cierre */
 
 #img-Libros {
     align-content: center;
@@ -251,6 +262,12 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
 }
 
 .primer-anuncio {
-    height: 450px;
-    width: 150px;
+    height: 490px;
+    width: 170px;
+}
+
+
+
+.sombra-imagen {
+     box-shadow: 0 0 10px darkgray;
 }
