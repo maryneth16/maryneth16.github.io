@@ -1,5 +1,5 @@
 .conteiner {
-    width: 960px;
+    width: 920px;
 }
 
 .block-center{
@@ -11,91 +11,246 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
     padding: 0;
 }
 
- #titulos h1 { font-size: 1.5em;} 
-    #titulos h2 { font-size: 1.2em;} 
-    #titulos h3 { font-size: 0.9em;} 
-    #titulos h4 { font-size: 0.8em;} 
-
-.imagen {
-    position: absolute;
-    bottom: -6px;
-    
-}
-
-
-.descripcion {
-    padding-left: 20px;
-    padding-right: 10px;
-    border: 2px solid darkgray;
-    border-radius: 10px;
-
-}
-
-
-
-.grupo {
-    border: 10px solid lightgray;
-    /* border-radius: 900%; para hacer la imagen redonda*/
-    box-shadow: 5px 0 5px darkgray;
-}
 
 #encabezado {
-    height: 135px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
 }
 
-
-.titulo-encabezado {
-    font-family: "Trajan Pro Regular";
-    font-variant: small-caps;
+#titulo {
+    margin-top: 0;
     text-align: center;
-    font-size: 1.5em;
+    padding-top: 15px;
+    box-shadow: 0 0 10px darkgray;
+    height:70px;
 }
 
 
-
-#notas-especialidad {
-    width: 700px;
-    min-height: 300px;
-    display: inline-block;
-    border-radius: 10px solid black;
+.enc-libro {
+    color: darkgoldenrod;
+    font-size: 15px;
 }
 
-
-#nota-especialidad article {
+/*menu o barra busqueda inicio*/
+#barra-busqueda {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
     
-    margin-bottom: 100px;
-    margin-top: 20px;
+}
+
+#barra-busqueda>ul>li{
+    display: inline-block;
+    position: relative;
+}
+
+#barra-busqueda a{
+    color: black;
+    padding: 18px 15px;
+    text-decoration: none;
+    display: flex;
 }
 
 
+#barra-busqueda >ul >li >a:hover {
+     transition: 0.5s;
+    background-color: darkgray;
+}
+
+/*menu o barra busqueda final*/
+
+
+/* imagen principal inicio */
 
 #imagen-principal {
     margin: 20px 0;
-        box-shadow: 0 0 15px darkgray;
-        margin-top: 20px;
-        margin-bottom: 35px;
+    box-shadow: 0 0 15px darkgray;
+    margin-top: 20px;
+    margin-bottom: 35px;
 }
+
+
+/* imagen principal cierre */
+
+
+/* sugerencias de libros cierre */
+
+#libros-sugerencias {
+    width: 700px;
+    min-height: 300px;
+    display: inline-block;
+}
+
+
+#libros-sugerencias article {
+    
+    margin-bottom: 40px;
+    margin-top: 25px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-radius: 10px;
+    border: 2px solid darkgray;
+}
+
+
+.imagen span {
+        position: absolute;
+        top: 10px;
+        left: -6px;
+        padding: 2px 4px;
+        box-shadow: 1px 1px 3px darkgray;
+        background-color: lightgray;
+    }
+
+.sinopsis {
+    text-align: justify;
+    margin-top: 25px;
+    padding-bottom: 6px;
+    line-height: 1.0em;
+    font-size: 14px;
+}
+
 
 .titulo-descripcion {
-    font-variant: inherit;
-    font-weight: 200;
-}
-
-.tema {
+    margin: 25px 0;
+    line-height: 0.9em;
     font-variant: small-caps;
-        line-height: 0.9em; 
-        font-size: 1.3em;
-        font-weight: 500;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 1.3em;
 }
 
-#tema {
-    background-color: bisque;
+.imagen {
+    position: relative;
+    bottom: -6px;
+    padding-left: 5px;
 }
 
-.tema-descripcion {
+
+.img-libro {
+    border: 7px solid black;
+    /* border-radius: 400%; */
+    box-shadow: 2px 0 2px darkgray;
+} 
+
+.sugerencias {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+/* sugerencias de libros cierre */
+
+
+/* bloque anuncios inicio */
+
+#anuncios {
+    width: 210px;
+     padding: 5px;
+    float: right;
+   
+    
+    
+}
+
+#anuncios > img{
+    margin-left: 50px;
+    display: flex;
+}
+
+/* bloque anuncios cierre */
+
+
+
+
+
+/* boton inicio */
+.Leer-libro{
+    margin-top: 1.5em;
+    background-color:antiquewhite;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0 2px 3px darkgray;
+    border-radius: 20px;
+    margin-right: 300px;
+    transition: 0.5px;
+}
+
+ .Leer-libro  div{
+    padding: 2px 20px !important;
+    border: 1px solid black;
+     border-radius: 20px;
+     
+     
+    }
+
+.Leer-libro:hover
+{
+    background-color: burlywood;
+    
+}
+    
+
+    .Leer-libro p {font-family: "calibri"; color: black; font-variant:inherit; font-size: 0.9em;}
+/* boton cierre */
+
+
+/* boton 2 inicio */
+
+.Descargar-Libro{
+    margin-top: 1.5em;
+    background-color:antiquewhite;
+    display: inline-block;
+    padding: 3px;
+    box-shadow: 0 2px 3px darkgray;
+     border-radius: 20px;
+    transition: 0.5px;
+}
+
+ .Descargar-Libro  div{
+       padding: 2px 20px !important;
+       border: 1px solid black;
+     border-radius: 20px;
+     
+    
+    }
+    
+.Descargar-Libro :hover{
+    background-color: burlywood;
+}
+    .Descargar-Libro p {font-family: "calibri"; color: black; font-variant:inherit; font-size: 0.9em;}
+
+/* boton 2 final */
+
+#pie 
+  {
+      clear: both;
+    height: 150px;
+     
+ }
+
+#politicas{
+     border-bottom: 3px double lightgray;
+     border-top: 3px double lightgray;
+     padding: 5px;
+     text-align: center;
+ }
+
+
+
+
+#img-Libros {
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+#text-sugerencia {
     text-align: center;
+    text-decoration-color: dodgerblue;
+}
+
+.primer-anuncio {
+    height: 450px;
+    width: 150px;
 }
