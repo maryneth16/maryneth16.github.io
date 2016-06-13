@@ -54,10 +54,27 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
     display: flex;
 }
 
+ #barra-busqueda>ul ul
+   {
+        
+        display: none;
+       position: absolute;
+        
+    }
 
 #barra-busqueda >ul >li >a:hover {
      transition: 0.5s;
     background-color: darkgray;
+}
+
+#barra-busqueda >ul>li:hover >ul{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+#barra-busqueda>ul ul li:hover{
+    background-color: lightcoral;
 }
 
 /*menu o barra busqueda final*/
@@ -215,6 +232,7 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
     border-radius: 20px;
     transition: 0.5px;
     margin-bottom: 10px;
+       
 }
 
  .Descargar-Libro  div{
@@ -270,4 +288,8 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li{
 
 .sombra-imagen {
      box-shadow: 0 0 10px darkgray;
+}
+
+a {
+    text-decoration: none;
 }
